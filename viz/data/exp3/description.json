@@ -1,0 +1,10 @@
+{
+  "experiment_ids": [2, 3],
+  "id": "2pubs/30subs/10min/gossip",
+  "spec": "Control",
+  "peerConnections": "[100, 400] (default)",
+  "nb_publishers": 2,
+  "nb_consumers": 30,
+  "psp": "GossipSub",
+  "duration_min": 10
+}

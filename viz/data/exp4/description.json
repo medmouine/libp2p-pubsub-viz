@@ -1,0 +1,11 @@
+{
+  "experiment_ids": [2],
+  "id": "2pubs/30subs/30min/connmng",
+  "spec": "3-7 Connmng",
+  "peerConnections": "[3, 7]",
+  "nb_publishers": 2,
+  "nb_consumers": 30,
+  "duration_min": 10,
+  "psp": "GossipSub",
+  "details": "Connection manager configured to limit connections between 3 and 7 peers"
+}

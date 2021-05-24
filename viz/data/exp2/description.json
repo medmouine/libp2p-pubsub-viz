@@ -1,0 +1,9 @@
+{
+  "experiment_ids": [1],
+  "id": "4pubs/30cons/30min",
+  "spec": "4 Publishers",
+  "nb_publishers": 4,
+  "nb_consumers": 30,
+  "psp": "GossipSub",
+  "duration_min": 30
+}

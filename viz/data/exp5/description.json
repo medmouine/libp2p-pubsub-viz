@@ -1,0 +1,9 @@
+{
+  "experiment_ids": [3],
+  "id": "2pubs/30subs/30min/flood",
+  "nb_publishers": 2,
+  "nb_consumers": 30,
+  "duration_min": 10,
+  "psp": "FloodSub",
+  "details": "FloodSub"
+}
