@@ -1,10 +1,10 @@
-module github.com/libp2p/go-libp2p/examples/pubsub/chat
+module github.com/medmouine/libp2p-pubsub-viz/pubsub-bm
 
 go 1.14
 
 require (
 	github.com/gdamore/tcell/v2 v2.1.0 // indirect
-	github.com/libp2p/go-libp2p v0.13.0
+	github.com/libp2p/go-libp2p v0.14.0
 	github.com/libp2p/go-libp2p-connmgr v0.2.4 // indirect
 	github.com/libp2p/go-libp2p-core v0.8.5
 	github.com/libp2p/go-libp2p-pubsub v0.4.1
