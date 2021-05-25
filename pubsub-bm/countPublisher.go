@@ -21,7 +21,6 @@ type PublisherTopic struct {
 	id        string
 }
 
-// PublisherMessage gets converted to/from JSON and sent in the body of pubsub messages.
 type PublisherMessage struct {
 	Message      string
 	SenderID     string

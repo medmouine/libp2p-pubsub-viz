@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "can-ndjson-stream": "^0.1.6",
+    "can-ndjson-stream": "^1.0.2",
     "classnames": "^2.3.1",
     "concurrently": "^6.1.0",
     "downsample": "^1.4.0",
     "express": "^4.17.1",
-    "luxon": "^1.27.0",
+    "mathjs": "^9.4.1",
     "ndjson": "^2.0.0",
     "nodemon": "^2.0.7",
     "querystring": "^0.2.1",
@@ -18,16 +18,16 @@
     "react-loader-spinner": "^4.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
-    "recharts": "^2.0.9"
+    "recharts": "^2.0.9",
+    "simple-statistics": "^7.7.0"
   },
   "scripts": {
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "start:prod": "npm run build && node server.js",
-    "start:server": "nodemon --watch ./server.js --exec \"node server.js\"",
-    "start:client": "react-scripts start",
-    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
+    "dev:server": "nodemon --watch ./server.js --exec \"node server.js\"",
+    "dev:client": "react-scripts start",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
   },
   "browserslist": {
     "production": [
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.3.0"
   }
 }

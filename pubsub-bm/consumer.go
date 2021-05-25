@@ -56,7 +56,6 @@ func (t *Topic) readLoop() {
 			close(t.Messages)
 			return
 		}
-		// only forward messages delivered by others
 		if msg.ReceivedFrom == t.self {
 			continue
 		}
@@ -65,7 +64,6 @@ func (t *Topic) readLoop() {
 		if err != nil {
 			continue
 		}
-		// send valid messages onto the Messages channel
 		fmt.Printf("Consumed message \"%s\" on topic [%s] from Publisher [%s:%s]\n", pm.Message, t.topicName, pm.SenderHostId, pm.SenderID)
 		t.Messages <- pm
 	}

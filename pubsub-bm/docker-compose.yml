@@ -34,9 +34,6 @@ services:
     build:
       context: ./
       dockerfile: tracer.Dockerfile
-    ports:
-      - "4001:4001"
-
 
   publisher1:
     restart: always
